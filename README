@@ -1,0 +1,24 @@
+--nodejs-leaflet-eventstreams-
+
+This webapp makes use of node, event-streams and leaflet. 
+
+It queries the Twitter Streaming API with location 
+so that only tweets that are geotagged with coordinates
+are returned. 
+
+The most recent tweets are pulled in and displayed on the
+map.  There is no database- tweets are displayed as they come in. 
+
+Much of the server side is based on nodejs-stream
+https://github.com/chovy/nodejs-stream
+
+To use, download the code and enter your twitter username and password in the 
+config.js file.  Install node and any dependencies using npm.  
+
+>node server.js 
+This will start the node server, the go to localhost:8000 in the browser
+to see the world map and watch it populate. Sometimes it takes a few 
+minutes for the API to fetch the tweets. 
+
+Get in touch on twitter, I am @kawantum
+Check out my other projects at whichlight.com
