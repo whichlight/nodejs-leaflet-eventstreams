@@ -4,9 +4,6 @@ var stream = function(){
 
 	source.addEventListener('twitter', function(e) {
 		var data = JSON.parse(e.data)
-		var temp = new Tweet
-		temp.set(data)
-		tweets.add(temp);
 		var latlng = new L.LatLng(data.coordinates.coordinates[1],data.coordinates.coordinates[0]);
 		var m = new L.Marker(latlng);
 		m.bindPopup('<a href = "http://twitter.com/'+data.user.screen_name+'"> <img src="'+data.user.profile_image_url+'" class="profile" /></a> <div id="text">'+data.text+'</div>' ).openPopup();		    
