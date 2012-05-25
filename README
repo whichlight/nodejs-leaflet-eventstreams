@@ -12,6 +12,11 @@ map.  There is no database- tweets are displayed as they come in.
 Much of the server side is based on nodejs-stream
 https://github.com/chovy/nodejs-stream
 
+Leaflet is a fantastic mapping library http://leaflet.cloudmade.com/
+
+More deets on the twitter streamin api for location
+https://dev.twitter.com/docs/streaming-apis/parameters#locations
+
 To use, download the code and enter your twitter username and password in the 
 config.js file.  Install node and any dependencies using npm.  
 
